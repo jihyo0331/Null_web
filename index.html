@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Smooth Animation</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  </head>
+  <body style="font-family: 'Pretendard', sans-serif;">
+    <div class="topbar" id="main-topbar">
+      <img class="topbar_img" src="img/logo_title.png" alt="null 로고"/>
+    </div>
+    <section id="scroll-trigger" data-aos="fade">
+      <div id="scroll-section">
+        <main class="sticky-container" id="sticky-container">
+        <div class="sticky">
+          <div class="slide-container">
+            <div class="slide" id="slide1">
+              <div class="slide-big-text">
+                <p style="color: white;">We Are the <span style="color: #AFBD85;">Creators</span></p>
+              </div>
+            </div>
+            <div id="scroll-down">
+              <div class="scroll-down-text"><span style="color: white;">Scroll down</span></div>
+            </div>
+            <div class="slide" id="slide2">
+              <div class="slide-big-text">
+                <p style="color: white;">We Create <span style="color: #AFBD85;">Everything </span></p>
+              </div>
+            </div>
+            <div class="slide" id="slide3">
+              <div class="slide-big-text">
+                <img src="img/logo.png" alt="logo" style="width: auto; height: 100px;">
+              </div>
+            </div>
+            <div class="slide slide-left" id="slide4">
+              <div class="slide4-content">
+                <div class="slide-small-text">
+                  <p style="color: white;">Creating Something out of Nothing</p>
+                </div>
+              </div>
+            </div>
+            <div id="moving-background">
+              <img src="img/logo.png" alt="logo" style="width: auto; height: 500; opacity: 0.1; ">
+            </div>
+
+            <div class="slide slide-left" id="slide5">
+              <div class="slide-big-text">
+                <img src="img/logo_title.png" alt="logo+title" style="width: auto; height: 30px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        </main>
+      </div>
+    </section>
+
+    <main class="main-home">
+      <section class="hero left-top hero-flex" data-aos="slide-up" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+        <div class="hero-text">
+          <header>
+            <h1>Software Project Club</h1>
+            <p>선린인터넷고 소프트웨어 프로젝트 동아리
+              <span style=" color: #AFBD85;">Null</span>은
+              <span style="color: #AFBD85;" data-aos="fade-left" data-aos-duration="1600" data-aos-anchor-placement="top-center" data-aos-delay="600">공백</span>입니다.
+              <br>
+              그렇기에 우리는 무엇이든 담을 수 있습니다.
+              <br>
+              우리는 무에서 유를 창조하는 <span>Creator</span> 입니다.
+            </p>
+          </header>
+          <div class="hero-description" data-aos="slide-right" data-aos-duration="1600" data-aos-anchor-placement="bottom-bottom">
+            <p class="spaced-text">
+            </p>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-grid">
+            <div class="top-row">
+              <img src="img/mkeeper.png" alt="img1" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="0" data-aos-anchor-placement="top-bottom"/>
+              <img src="img/frip.png" alt="img2" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="100" data-aos-anchor-placement="top-bottom"/>
+            </div>
+            <div class="bottom-row" style="margin: -30vh 0 0 0; padding: 0; display: flex; gap: 1%; justify-content: flex-end;">
+              <img src="img/Aero Blitz.png" alt="img3" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="200" data-aos-anchor-placement="top-bottom"/>
+              <img src="img/bbs.png" alt="img4" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="300" data-aos-anchor-placement="top-bottom"/>
+              <img src="img/bcf.png" alt="img5" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="400" data-aos-anchor-placement="top-bottom"/>
+              <img src="img/ukeeper.png" alt="img6" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="500" data-aos-anchor-placement="top-bottom"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="curriculum-section">
+        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">커리큘럼</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+          <span style=" color: #AFBD85;">Null</span>은
+          소프트웨어를 이용해 사회적 약자를 돕고,<br>
+          사회 문제 해결에 도움을 줄 수 있는 프로젝트를<br>
+          개발 및 연구 하는 것을 목적으로 설립된 동아리로<br>
+          독자적이고 독창적인 커리큘럼을 제공합니다.
+        </p>
+        <div class="entries">
+          <div class="entry" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">동아리 OT</div>
+            <div class="body">
+              <p>동아리 오리엔테이션</p>
+            </div>
+          </div>
+          <div class="entry" class="entry" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">프라블럼 스코핑</div>
+            <div class="body">
+              <p>
+                Problem scoping(문제 정의) 과정을 통해<br>
+                사회적 문제를 명확히 파악하고,창의적인 아이디어로<br>
+                해결 방향을 도출하기위한 준비를 하는 단계입니다.
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">아이데이션</div>
+            <div class="body">
+              <p>
+                Ideation(아이디어 도출) 과정은<br>
+                프라블럼 스코핑 단계에서 파악하였던 <br>
+                문제를 바탕으로<br>
+                소프트웨어를 이용한 창의적인 <br>
+                해결 방안을 탐구하믄 단계입니다.<br>
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">팀 빌딩</div>
+            <div class="body">
+              <p>
+                팀 빌딩 과정은 <br>
+                프라블럼 스코핑과 아이데이션 단계를 바탕으로<br>
+                자신의 아이디어에 대해 발표하고, <br>
+                동아리 부원들끼리 팀을 구성하는 단계입니다.
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">소셜 임팩트 프로젝트 아이디어 발표회</div>
+            <div class="body">
+              <p>
+                소셜 임팩트 프로젝트는<br>
+                사회의 선한 영향력을 줄 수 있는<br>
+                프로젝트 입니다.<br>
+                소셜 임팩트 프로젝트 <br>
+                아이디어 발표회는<br>
+                팀 빌딩 단계에서 결성된 팀으로 <br>
+                아이데이션 단계에서 도출된 <br>
+                아이디어를 <br>
+                더욱 구체화 하고 <br>
+                프로젝트 진행 일정까지 계획하여 <br>
+                발표하는 단계입니다.
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">테크 스프린트</div>
+            <div class="body">
+              <p>
+                Tech Sprint(사용기술 스터디 및 개발) <br>
+                해당 단계는 프로젝트의 사용되는 기술을 <br>
+                팀원들끼리 역할을 분배하여<br>
+                스스로 익히고 학습한것을 <br>
+                서로 공유하는 단계로 <br>
+                여러 분야가 융합되어 진행되는 <br>
+                소프트웨어 프로젝트 진행시,<br>
+                가장 중요한 역량을 기르는 단계 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">도큐멘테이션</div>
+            <div class="body">
+              <p>
+                Documentation(진행 상황 기록)<br>
+                단계는 프로젝트의 사용되는 기술을 <br>
+                팀원들끼리 역할을 분배하여<br>
+                스스로 익히고 학습한것을 <br>
+                서로 공유하는 단계로 <br>
+                여러 분야가 융합되어 진행되는 <br>
+                소프트웨어 프로젝트 진행시,<br>
+                가장 중요한 역량을 기르는 단계 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">프로그래스 체크</div>
+            <div class="body">
+              <p>
+                Progress Check(진행 상황 체크)<br>
+                단계는 현재까지 진행상황을 체그하는 단계 입니다.<br>
+                진행상황 체크를 위해 팀별로 도큐멘테이션한 내용을 발표합니다.<br>
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">환류 및 동료평가</div>
+            <div class="body">
+              <p>
+                환류 및 동료평가 단계는 프로그래스 체크 후<br>
+                현재까지 과정을 평가하는 단계로 일방적으로<br>
+                평가하는 단계가 아니라<br>
+                서로 의견을 나누는 단계 입니다.
+              </p>
+            </div>
+          </div>
+          <div class="entry" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-anchor-placement="top-bottom">
+            <div class="title">프로그래스 체크</div>
+            <div class="body">
+              <p>
+                Progress Check(진행 상황 체크)<br>
+                단계는 현재까지 진행상황을 체그하는 단계 입니다.<br>
+                진행상황 체크를 위해 팀별로 도큐멘테이션한 내용을 발표합니다.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; Null</p>
+        <p>Contact: sunrin.null@gmail.com</p>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

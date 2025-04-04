@@ -1,0 +1,363 @@
+body{
+  background-color: #0F0F0F;
+  font-family: "Pretendard", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+    text-align: center;
+    font-family: "Pretendard", sans-serif;
+  }
+  
+  .c2 {
+    height: 400px;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .slide-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    position: absolute;
+    display: none;
+    z-index: 0;
+  }
+  
+  .slide.enabled {
+    display: block;
+  }
+  
+  .slide-big-text p {
+    margin: 0;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.35;
+    letter-spacing: -1.5px;
+    word-spacing: 1.5px;
+    text-align: center;
+  }
+  
+  .slide-small-text {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  
+  .slide-small-text p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  #scroll-down {
+    position: absolute;
+    padding: 30px 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    bottom: 0px;
+  }
+  
+  #moving-background {
+    width: 500px;
+    padding-top: 40px;
+    height: 500px;
+    /* background-color: #f5f5f5;
+    color: #777; */
+    z-index: -1;
+}
+
+.image-merge-group {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 40px auto;
+}
+
+.merge-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: all 0.8s ease;
+}
+
+.main-home {
+  background-color: #0F0F0F;
+  padding: 80px 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.main-home .hero h1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 3vw;
+  font-weight: 700;
+}
+
+.main-home .hero p {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 3vw;
+  color: #cccccc;
+  font-weight: 400;
+}
+
+/* Topbar styles */
+.topbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 3vh;
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.topbar_img {
+  height: 2vh;
+}
+
+/* New wrapper for scroll section */
+#scroll-section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0vh; /* ensures main-home starts on a clean new screen */
+}
+
+#scroll-trigger.aos-animate ~ #main-topbar {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-flex {
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: -27vh;
+  right: 0vw;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Already set to 0, will ensure tight spacing */
+  padding: 0;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+
+.image-grid .top-row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1%;
+  justify-content: flex-end;
+}
+.image-grid .bottom-row {
+  margin: -4px 0 0 0;
+  padding: 0;
+  display: flex;
+  width: 78vw;
+  height: auto;
+  gap: 1%;
+  justify-content: flex-end;
+}
+
+.image-grid img {
+  width: 1vw;
+  height: auto;
+  max-width: 30%;
+  object-fit: contain;
+}
+
+.hero-image img {
+  height: 65vh;
+  width: auto;
+}
+
+.hero-description {
+  position: relative;
+  z-index: 2;
+  margin-top: 10vh; /* increased from 40px */
+}
+
+.curriculum-section {
+  margin-top: 80vh;
+  padding: 0;
+  color: white;
+  text-align: left;
+}
+
+.curriculum-section h1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 3vw;
+  font-weight: 700;
+}
+
+.curriculum-section p {
+  font-size: 20px;
+  margin: 0 0 40px 0; /* adds bottom margin */
+  text-align: left;
+  margin-left: 3vw;
+  color: #cccccc;
+  font-weight: 400;
+}
+
+.curriculum-section .entries {
+  position: relative;
+  margin: 60px auto; /* added top margin for clearer separation */
+  max-width: 800px;
+  padding: 200px 0;
+}
+
+.curriculum-section .entries::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+.curriculum-section .entry {
+  position: relative;
+  width: 50%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.curriculum-section .entry:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.curriculum-section .entry:nth-child(odd) .body p {
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.75;
+  white-space: nowrap;
+}
+
+.curriculum-section .entry:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.curriculum-section .entry:nth-child(even) .body p {
+  text-align:left;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  white-space: nowrap;
+}
+
+.curriculum-section .entry .title {
+  font-weight: bold;
+  background-color: #AFBD85;
+  color: #0F0F0F;
+  padding: 10px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.curriculum-section .entries {
+  margin-top: 20px;
+}
+
+.curriculum-section .entry {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-image img {
+    height: 6vh;
+  }
+
+  .main-home .hero h1 {
+    font-size: 36px;
+  }
+
+  .main-home .hero p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-home .hero h1 {
+    font-size: 28px;
+  }
+
+  .main-home .hero p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    height: 5vh;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+* {
+  font-family: "Pretendard", sans-serif;
+}
+
+.site-footer {
+  background-color: #151515;
+  color: #cccccc;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+.site-footer .footer-content p {
+  margin: 6px 0;
+}
